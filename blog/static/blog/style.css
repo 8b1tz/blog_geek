@@ -1,0 +1,127 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background-color: #6d428a;
+  color: #333;
+  padding: 15px 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #6d428a;
+  color: #fafafa;
+  border: none;
+}
+
+.nav-link:hover {
+  background-color: #4b2b61;
+  cursor: pointer;
+}
+
+/* Main Content */
+.container_header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-section {
+  width: 600px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.article-title {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.article-title:hover {
+  color: #003569;
+}
+
+.article-content {
+  color: #666;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.content_body {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vw;
+}
+
+.logo_texto {
+  text-align: center;
+  font-size: x-large;
+}
+
+.form_content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.registro_texto {
+  text-align: center;
+}
+
+button {
+  border-radius: 50%;
+}
+
+.postagens {
+  display: grid;
+}
+
+.titulo {
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #6d428a;
+  font-weight: bolder;
+}

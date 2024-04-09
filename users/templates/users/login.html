@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="content-section">
+        <div class="logo_texto">Ponto Geek</div>
+            <div class="form_content">
+                <form action="" method="post">
+                    {% csrf_token %}
+                        {{ form.as_p }}
+                    <div class="form_content">
+                        <button class="nav-link" type="submit">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        <div class="registro_texto">
+            <small class="text-muted">Precisa de uma conta? <a href="{% url 'register' %}">Registrar Agora</a></small>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="content-section">
+        <form action="" method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Olá</legend>
+                <h4>Você acabou de sair</h4>
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit"><a href="{% url 'login' %}">Entrar Novamente</a></button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

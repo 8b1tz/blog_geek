@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="content-section">
+        <form action="" method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Excluir Postagem</legend>
+                <h4>Você deseja excluir esta postagem <b>"{{ object.title }}"</b></h4>
+            </fieldset>
+            <div class="form-group">
+                <button type="submit">Excluir</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">Já tem uma conta? <a href="{% url 'blog-home' %}">Volte</a></small>
+        </div>
+    </div>
+{% endblock content %}
